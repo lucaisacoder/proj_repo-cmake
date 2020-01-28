@@ -2,7 +2,8 @@
 cmake_minimum_required (VERSION 2.8)
 
 # 项目信息
-project (PROJ_REPO)
+cmake_policy (SET CMP0048 NEW)
+project (PROJ_REPO VERSION 1.1.1)
 # 指定top路径
 get_filename_component(PROJ_REPO_TOP_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../.. ABSOLUTE)
 
