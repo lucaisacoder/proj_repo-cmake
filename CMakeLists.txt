@@ -36,10 +36,7 @@ include_directories(${Osal_INCLUDE_DIRS})
 
 # 指定生成目标
 add_executable(PROJ_REPO main.c)
-target_link_libraries(PROJ_REPO  
-    ${App_LIBRARIES} 
-    ${Core_LIBRARIES}
-    ${Osal_LIBRARIES})
+target_link_libraries(PROJ_REPO ${Core_LIBRARIES} ${Osal_LIBRARIES} ${App_LIBRARIES})
 
 # 指定安装
 install(
